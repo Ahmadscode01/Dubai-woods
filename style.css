@@ -621,16 +621,16 @@ footer img{
 
 }
 
-.chat{
+.chat img{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: right;
+        align-items: flex-start;
+        width: 300px;
         position: fixed;
-        top: 150em;
-        text-indent:2650px;
-        opacity: 80%;
+        left: 78em;
+        bottom: 5em;
 }
-
 .chat:hover{
         opacity: 100%;
         transition: 0.3s;
