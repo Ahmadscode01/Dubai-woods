@@ -1,4 +1,5 @@
-body{
+      
+       body{
         
                 min-width: 850px;
                 margin: 0 auto; /* Centers content */
@@ -214,7 +215,7 @@ body{
         color:  rgb(44, 44, 44);
         font-size:1.2em ;
         font-family: sans-serif;
-        font-weight: ;
+        
         line-height: 1.5em;
         letter-spacing: 0.5px;        
         /*margin-left: 3.3em;*/
@@ -222,15 +223,16 @@ body{
 
 }
 /*-------------------------------------------------------------------------------------------*/
-.services .head{
+.services .head1{
         display: flex;
         color: rgb(22, 22, 100);
         justify-content: center;
         font-family: sans-serif;
         font-weight: bold;
-        width: 7em;
+        width: 10em;
+        height: 60px;
         border-radius: 10px;
-        margin-left: 12.5em;
+        margin-left: 11.2em;
         margin-right: 12em;
         margin-bottom: 1em;
         font-size:3em ;
@@ -241,7 +243,7 @@ body{
       
 }
 
-.head:hover{
+.head1:hover{
         box-shadow: 1px 1px 20px black;
         text-shadow: 1px 1px 5px white;
         transition: 0.3s;
@@ -254,7 +256,6 @@ body{
         flex-wrap: wrap;
         width: 100em;
         gap: 5px;
-        border: ;
       
         
 }
@@ -308,7 +309,33 @@ body{
         margin-top:1em;
         filter: invert(1);
 }
+/*---------------------------------------------------------------------*/
+.services .head{
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        width: 10em;
+        height: 2em;
 
+        margin-left: 11.5em;
+        background-color: aliceblue;
+        cursor: pointer;
+        padding: 1px;
+        
+      }       
+  
+
+.services .head1 h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(22, 22, 100);
+        font-family: sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        
+}
 .services h1{
         display: flex;
         justify-content: center;
@@ -317,7 +344,6 @@ body{
         font-weight: bold;
         font-stretch: expanded;
 }
-
 #boxes div p{
         display: flex;
         justify-content: center;
@@ -332,26 +358,30 @@ body{
         line-height: 1.5em;
         letter-spacing: 0.5px; 
 }
-
+/*----------------------------------------------------------------------------------*/
 .also h1{
         display: flex;
         color: rgb(22, 22, 100);
         justify-content: center;
         font-family: sans-serif;
         font-weight: bold;
-        width: 7em;
+        width: 10em;
         border-radius: 10px;
-        margin-left: 12.5em;
+        margin-left: 11.5em;
         margin-right: 12em;
-        margin-bottom: 0em;
         font-size:3em ;
         background-color: aliceblue;
         padding: 0.5em;
+
+
         cursor: pointer;
 }
 
-.also h1:hover{
+
+
+.also .head2 h1:hover{
         box-shadow: 1px 1px 20px black;
+
         text-shadow: 1px 1px 5px white;
         transition: 0.3s;
 
@@ -498,11 +528,11 @@ footer img{
         
        
         body{
-                margin: 50em;
                 min-width: 400px;
                 margin: 0 auto; /* Centers content */
                 background: url(marble.jpg);
                 background-repeat: repeat;
+             
         
   }
   
@@ -535,8 +565,15 @@ footer img{
         justify-content: center;
         color:black;
         flex-wrap: wrap;
+        opacity: 0%;
         width: 50em;
         height: 0px;
+        margin: 0 auto; /* Centers content */
+
+ }
+
+ #hr{
+     opacity: 100%;
  }
 
   nav{ 
@@ -558,6 +595,8 @@ footer img{
         letter-spacing: 0.1em;
         transition: 0.3s;
         min-width: 15em;
+        margin: 0 auto; /* Centers content */
+
 
         margin-left: 22.2em;
        /* transform: translateX(-50%);*/
@@ -602,7 +641,7 @@ footer img{
   /* Hero Section */
   .hero {
         display: flex;
-        background: url('woodwork.jpg') no-repeat center center/cover;
+        background: url('div.jpg') no-repeat center center/cover;
         flex-wrap: wrap;  
         height: 200vh; 
         min-width: 600px;
@@ -621,6 +660,16 @@ footer img{
 
 }
 
+/*.chat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position:absolute;
+        top: 150em;
+        text-indent:2650px;
+        opacity: 80%;
+}*/
 .chat img{
         display: flex;
         flex-wrap: wrap;
@@ -628,10 +677,12 @@ footer img{
         align-items: flex-start;
         width: 300px;
         position: fixed;
-        left: 78em;
-        bottom: 5em;
+        left: 70em;
+        bottom: 7em;
+        z-index: 90;
+
 }
-.chat:hover{
+.chat img:hover{
         opacity: 100%;
         transition: 0.3s;
         
@@ -679,14 +730,19 @@ footer img{
         display: flex;
         justify-content: center;
         background-color: aliceblue;
-        margin: 5em;
-        padding: 2em;
+        padding: 0em;
         border-radius: 10px;
-        height: 18em;
-        width: auto;
-        min-width: 85em;
+        height: 55em;
+        width: 75em;
+        min-width: 0em;
         cursor: pointer;
         overflow-y:hidden;
+        margin-left: 12.5em;
+        margin-right: 12.5em;
+
+
+
+
 }
 
 .about:hover{
@@ -700,21 +756,29 @@ footer img{
 .about h1{
         display: flex;
         color:  rgb(22, 22, 100);
-        font-size:3em ;
+        font-size:5em ;
         font-family: sans-serif;
         font-weight: bold;
+        justify-content: center;
         
-       /* margin-left: 1.3em;*/
+       /* margin-left: 1.3em;*/   
 }
 
 .about p{
         display: flex;
+        justify-content: center;
+
+        width: 20em;
+
+        text-align: center;
+
+
         color:  rgb(44, 44, 44);
-        font-size:1.2em ;
+        font-size:3.5em ;
         font-family: sans-serif;
-        font-weight: ;
-        line-height: 1.5em;
-        letter-spacing: 0.5px;        
+        font-weight: bold;
+        line-height: 1.7em;
+        letter-spacing: 1px;        
         /*margin-left: 3.3em;*/
         
 
@@ -722,23 +786,29 @@ footer img{
 /*-------------------------------------------------------------------------------------------*/
 .services .head{
         display: flex;
-        color: rgb(22, 22, 100);
         justify-content: center;
-        font-family: sans-serif;
-        font-weight: bold;
-        width: 7em;
         border-radius: 10px;
-        margin-left: 12.5em;
-        margin-right: 12em;
-        margin-bottom: 1em;
-        font-size:3em ;
+        width: 14em;
+        height: 3em;
+
+        margin-left: 10em;
         background-color: aliceblue;
-        padding: 0.5em;
         cursor: pointer;
+        padding: 1px;
+        
+      }       
 
-      
+.services .head h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(22, 22, 100);
+        font-family: sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        cursor: pointer;
+        
 }
-
 .head:hover{
         box-shadow: 1px 1px 20px black;
         text-shadow: 1px 1px 5px white;
@@ -752,7 +822,7 @@ footer img{
         flex-wrap: wrap;
         width: 100em;
         gap: 5px;
-        border: ;
+        
       
         
 }
@@ -762,12 +832,14 @@ footer img{
         flex-wrap: wrap;
         background-color: rgb(22, 22, 100);
         background-position: center;
-        border-radius: 10px;
+        border-radius: 30px;
 
         justify-content: center;
-        width: 25em;
-        height: 25em;
-        margin-bottom: 15em;
+        width: 75em;
+        height: 85em;
+        margin-bottom: 25em;
+     
+
 
 }
 
@@ -781,6 +853,7 @@ footer img{
         box-shadow: 1px 1px 20px black;
         text-shadow: 1px 1px 5px rgb(0, 0, 0);
         transition: 0.3s;
+
 }
 
 #box3:hover{
@@ -799,11 +872,11 @@ footer img{
         display: flex;
         flex-wrap: wrap;
         align-self: top;
-        width: 5em;
-        height: 7em;
+        width: 15em;
+        height: 17em;
         min-width: 5em;
         min-height: 7em;
-        margin-top:1em;
+        margin-top: 4em;
         filter: invert(1);
 }
 
@@ -813,40 +886,42 @@ footer img{
         color: aliceblue;
         font-family: sans-serif;
         font-weight: bold;
+        font-size: 7em;
         font-stretch: expanded;
 }
 
 #boxes div p{
         display: flex;
         justify-content: center;
-        justify-self: center;
+        text-align: center;
         margin-left: 2em;
         margin-right: 2em;
-        margin-bottom: 15em;
         color: white;
         font-family: sans-serif;
-        
-        font-size:1.2em ;
-        line-height: 1.5em;
+        font-size:4em ;
+        line-height: 2em;
         letter-spacing: 0.5px; 
 }
 
+/*-------------------------------------------------------------------------------------------------------*/
 .also h1{
         display: flex;
         color: rgb(22, 22, 100);
         justify-content: center;
         font-family: sans-serif;
         font-weight: bold;
+        height: 1px;
         width: 7em;
         border-radius: 10px;
-        margin-left: 12.5em;
-        margin-right: 12em;
+        margin-left: 0em;
+        margin-right: 0em;
         margin-bottom: 0em;
-        font-size:3em ;
+        font-size:0em ;
         background-color: aliceblue;
-        padding: 0.5em;
+        padding: em;
         cursor: pointer;
 }
+        
 
 .also h1:hover{
         box-shadow: 1px 1px 20px black;
@@ -854,45 +929,50 @@ footer img{
         transition: 0.3s;
 
 }
-
+/*-------------------------------------------------------------------------------*/
+.also{
+    margin-left: 9999em;
+}
 .also ul{
         display: flex;
         justify-content: center;
         background-color: aliceblue;
-        margin: 5em;
-        padding: 2em;
-        border-radius: 10px;
-        height: 18em;
+        height: auto;
         width: auto;
-        min-width: 85em;
+        border-radius: 10px;
+        border: 2px solid red;
         cursor: pointer;
-        overflow-y:hidden;
-        flex-direction: column;
         font-family: sans-serif;
-
+        flex-direction: column;
+        padding:auto;
+        margin: auto;
+        text-align: center;
 }
 
 .also ul li{
-        display: flex;
-        justify-content:center;
-        justify-self: center;
-        margin-left: 2em;
-        margin-right: 2em;
-        margin-bottom: 0em;
+
         color: rgb(0, 0, 0);
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        border: 2px solid red;
+
         font-family: sans-serif;
         font-weight: bold;
-        font-size:1.5em ;
-        line-height: 2em;
-        letter-spacing: 0.5px; 
+        font-size:3em ;
+        letter-spacing: 0.5px;
+        padding: auto;
+        font-stretch: expanded;
+        margin: 1px;
+
 }
 
 .also b{
         color:  rgb(22, 22, 100);
-        font-stretch: expanded;
-        margin-right: 0.5em;
        
 }
+
+
 
 .also ul:hover{
         box-shadow: 1px 1px 20px black;
@@ -908,21 +988,35 @@ footer{
         flex-wrap: wrap;
         background-color: rgb(14, 14, 71);
         opacity: 80%;
-        height: 30em;
+        height: 60em;
         width: 100em;
         font-family: sans-serif;
         color: white;
 }
 
-footer p{
+/*footer p{
         display: flex;
         justify-content: center;
         margin-left: 43em;
-        
+
         margin-top: 2em;
         font-stretch: expanded;
-
         width: 15em;
+        font-size: 3em;
+
+}*/
+
+#copyright{
+        display: flex;
+        justify-content: center;
+        padding: 10em auto;
+        font-size: 5em;
+}
+
+#developed{
+        margin: 10em auto;
+
+
 
 }
 
@@ -969,3 +1063,4 @@ footer img{
       }
       
        
+
