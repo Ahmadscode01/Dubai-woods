@@ -1,0 +1,1 @@
+alert("The developer is currently on leave!");
