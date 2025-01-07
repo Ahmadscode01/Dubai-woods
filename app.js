@@ -1,1 +1,1 @@
-alert("The developer is currently on leave!");
+alert("The Developer Is Currently On Leave!");
